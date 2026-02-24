@@ -33,6 +33,8 @@ jobs:
 
       - name: Build client
         run: pnpm exec vite build
+        env:
+          VITE_BASE: /root6/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

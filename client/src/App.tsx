@@ -700,7 +700,7 @@ const AppContent = () => {
 };
 
 const App = () => (
-  <Router>
+  <Router base={import.meta.env.BASE_URL}>
     <AppContent />
   </Router>
 );
